@@ -16,7 +16,7 @@ This is a solution to the [Multi-step form challenge on Frontend Mentor](https:/
   - [Continued development](#continued-development)
   - [Useful resources](#useful-resources)
 - [Author](#author)
-- [Acknowledgments](#acknowledgments)
+
 
 ## Overview
 
@@ -34,4 +34,56 @@ Users should be able to:
   - The email address is not formatted correctly
   - A step is submitted, but no selection has been made
 
-  
+  ### Screenshot
+
+![](./screenshot.jpg)
+
+### Links
+
+- Solution URL: [Add solution URL here](https://github.com/nevredimiy/frontendMentor-Multi-stepFormSolution.git)
+- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+
+## My process
+
+### Built with
+
+- Semantic HTML5 markup
+- CSS custom properties
+- Flexbox
+- CSS Grid
+- Mobile-first workflow
+- [React](https://reactjs.org/) - JS library
+- Base hooks: useState, useContext, useRef
+
+### What I learned
+
+I used new hook for me it is **useContext**. I combinet it with **useState**
+
+
+```js
+export const dataMFContext = React.createContext();
+...
+...
+const [dataTotal, setDataTotal] = React.useState({ ... });
+<dataMFContext.Provider value={{ dataTotal, setDataTotal }}>
+  {conditionalComponent()}
+</dataMFContext.Provider>
+```
+
+### Continued development
+
+On other projects, I would like to explore the Redux example.
+
+### Useful resources
+
+- [Example resource 1](https://blog.logrocket.com/build-multi-step-form-usestate-hook/) - This is an amazing article which helped me used hook useState
+- [Example resource 2](https://react.dev/reference/react/useContext) - Article about useContext
+- [Example resource 3](https://blog.webdevsimplified.com/2020-06/use-context/) - Another article about hook useContext
+
+
+## Author
+
+- Website - [Artem](https://writecode6.wordpress.com/%d0%be%d0%b1%d0%be-%d0%bc%d0%bd%d0%b5/)
+- Frontend Mentor - [@nevredimiy](https://www.frontendmentor.io/profile/nevredimiy)
+- Youtube - [@write-code](https://studio.youtube.com/channel/UCnmIQSMt8ayFgE2deKtAaKQ)
+
